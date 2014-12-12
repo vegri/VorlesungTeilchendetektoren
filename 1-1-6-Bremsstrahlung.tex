@@ -5,12 +5,64 @@ Hüllenelektrons des Targets.
 Die zughörigen Feyman-Diagramme niedrigster Ordnung:
 \\
 \\
-\\
-Feynman-Diagramme
+
+% \begin{fmffile}{diagram}
+% \begin{fmfgraph}(40,25)
+% \fmfleft{i1,i2}
+% \fmfright{o1,o2}
+% \fmf{photon}{i1,v1,o1}
+% \fmf{fermion}{i2,v2,o2}
+% \fmf{photon}{v1,v2}
+% \end{fmfgraph}
+% \end{fmffile} 
+
+
+% \begin{fmffile}{hilde}
+% \begin{fmfgraph}(40,25)
+% \fmfleft{i1,i2}
+% \fmfright{o1,o2}
+% \fmf{fermion}{i2,v2,v1,o1}
+% \fmf{photon}{i1,v1}
+% \fmf{photon}{v2,o2} 
+% \end{fmfgraph}
+% \end{fmffile} 
 
 
 
-
+\begin{minipage}[t]{0.3\textwidth}
+\begin{fmffile}{hubert}
+\begin{fmfgraph*}(100,100)
+\fmfleft{i1,i2}
+\fmfright{o1,o2}
+\fmf{fermion}{i1,v1,v2,o2}
+\fmf{photon}{i2,v2}
+\fmf{photon}{v1,o1}
+\fmflabel{v1}{v1}
+\fmflabel{v2}{v2}
+% \fmflabel{$e^-(p)$}{i1}
+% \fmflabel{$\gamma(k)$}{i2}
+% \fmflabel{$\gamma(k)$}{o1}
+% \fmflabel{$e^-(p)$}{o2}
+\end{fmfgraph*}
+\end{fmffile}
+\end{minipage}
+% \begin{minipage}[t]{0.3\textwidth}
+% \begin{fmffile}{hubert}
+% \begin{fmfgraph}(100,100)
+% \fmfleft{i1,i2}
+% \fmfright{o1,o2}
+% \fmf{fermion}{i1,v1,v2,o2}
+% \fmf{photon}{i2,v2}
+% \fmf{photon}{v1,o1}
+% \fmflabel{$v_1$}{v1}
+% \fmflabel{$v_2$}{v2}
+% % \fmflabel{$e^-(p)$}{i1}
+% % \fmflabel{$\gamma(k)$}{i2}
+% % \fmflabel{$\gamma(k)$}{o1}
+% % \fmflabel{$e^-(p)$}{o2}
+% \end{fmfgraph}
+% \end{fmffile}
+% \end{minipage}
 
 
 \subsubsection*{Energieverlust durch Bremsstrahlung}
@@ -47,7 +99,7 @@ erhalten, verwendet man:
 
 \[E_c^\mu = E_c^e \left( \frac{m_\mu}{m_e} \right)^2 \]
 
-Zur groben Abschätzung von $E_c$ sind diverve Näherungen gegeben, z.B.
+Zur groben Abschätzung von $E_c$ sind diverse Näherungen gegeben, z.B.
 
 \[E_c = \frac{800}{Z+1{},2}~\text{MeV} \]
 
@@ -71,3 +123,30 @@ Die bekannten Zahlenwerte für $E_c$ schwanken relativ stark:
 
 \subsubsection*{Strahlungslänge $\chi_0$}
 
+Die Strahlungslänge ist jene Strecke, in der die Energie des Projektils durch Strahlungsverlust um
+einen Faktor $\frac{1}{e}(\approx)$63,2\% kleiner wird:
+
+\[E(x)=E_0\cdot e^{-\frac{x}{\chi_0}}\]
+
+Diese Beziehung ist nur sinnvoll für Energien größer als $E_c$. Die Literaturwerte für $\chi_0$
+beziehen sich dabei stets auf Elektronen, für andere Teilchen skaliert die Strahlungslänge mit dem
+Quadrat der Projektilmasse (ebenso wie bei $E_c$).
+\\
+Die oben gegebene Formel für die Bremsstrahlung führt für die Elektronen auf eine Strahlungslänge
+von 
+
+\[\frac{1}{\chi_0}=4\cdot\alpha \rho N_A \cdot\frac{Z(Z+1)}{A}\cdot
+r_e^2\cdot\text{ln}\left(183\cdot Z^{-1/3}\right)\]
+
+\[\text{Näherungsformel:}~~\chi_0\bigg[\frac{\text{g}}{\text{cm}^2}\bigg] \approx
+180~\frac{A}{Z^2}\] 
+
+Meist werden Materialdicken von Targets in Einheiten von $\chi_0$ angegeben, womit der
+Strahlungsverlust pro Targetdicke dann materialunabhängig ist. Genauso wird die Strahlungslänge -
+analog zur Energieverlustrate - auf die Targetdichte bezogen ($\rho \chi_0\rightarrow\chi_0$) und
+folglich in [g/cm$^2$] angegeben:
+
+\begin{figure}[H]
+	\centering
+	\includegraphics[width=0.5\textwidth]{tabelle2.jpg}
+\end{figure}
