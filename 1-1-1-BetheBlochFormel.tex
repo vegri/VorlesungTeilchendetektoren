@@ -1,5 +1,6 @@
-Zur klassischen Herleitung der Bethe-Bloch-Formel betrachten wir den Energieverlust $\frac{dE}{dx}$
-eines schweren (d.h. $m>>m_e$), geladenen Teilchens durch Streuung an einem Hüllenelektron eines
+\FloatBarrier
+Zur klassischen Herleitung der Bethe-Bloch-Formel betrachten wir den Energieverlust
+$\frac{dE}{dx}$ eines schweren (d.h. $m>>m_e$), geladenen Teilchens durch Streuung an einem Hüllenelektron eines
 Targetatoms.
 \\
 Dabei gelten folgende Annahmen:
@@ -19,117 +20,123 @@ Target einwirkenden Kraft. Für die longitudinalen bzw. transversalen Komponente
 d.h. nur der Transversalanteil ist wichtig, die longitudinalen Komponenten im Impulsübertrag heben
 sich auf. Es gilt daher
 
-\[\Delta p= \int_{-\infty}^{\infty}F\cdot dt = \int_{-\infty}^{\infty}eE_t\cdot dt =
-e\int_{-\infty}^{\infty}E_t\frac{dt}{dx}\cdot dx
-=e\int_{-\infty}^{\infty}E_t\frac{1}{v}\cdot dx
-=\frac{e}{v}\int_{-\infty}^{\infty}E_t\cdot dx\]
+\[\Delta p= \int_{-\infty}^{\infty}F\cdot\, \mathrm{d}t = \int_{-\infty}^{\infty}e\cdot E_t\cdot\,
+\mathrm{d}t = e\int_{-\infty}^{\infty}E_t\cdot\frac{\mathrm{d}t}{\mathrm{d}x}\cdot\, \mathrm{d}x
+=e\int_{-\infty}^{\infty}E_t\cdot\frac{1}{v}\cdot\, \mathrm{d}x
+=\frac{e}{v}\int_{-\infty}^{\infty}E_t\cdot\, \mathrm{d}x\]
 
-Mit Gauß $\int_{-\infty}^{\infty}E_t2\pi bdx=4\pi ze$ folgt
+Mit Gauß $\int_{-\infty}^{\infty}2\pi\cdot E_t\cdot b\,\mathrm{d}x=4\pi ze$ folgt
 
-\[\Delta p = \frac{2ze^2}{vb}\]
+\[\Delta p = \frac{2z\cdot e^2}{v\cdot b}\]
 
 und somit für den Energieübertrag
 
-\[\Delta E=\frac{\Delta p^2}{2m_e}=\frac{2z^2e^4}{m_ev^2b^2} .\]
+\[\Delta E(b)=\frac{\Delta p^2}{2m_e}=\frac{2z^2\cdot e^4}{m_e\cdot v^2 \cdot b^2} .\]
 
 Eine Elektronendichte von $n_e$ ergibt daher einen Energieverlust von 
 
-\[-dE(b)=\Delta E(b)n_edv=\frac{2z^2e^4}{m_ev^2b^2}n_e2\pi b db dx\]
+\[-\mathrm{d}E(b)=\Delta E(b)\cdot n_e\,\mathrm{d}V=\frac{2z^2\cdot e^4}{m_e\cdot v^2\cdot
+b^2}\, n_e\cdot 2\pi\cdot b\, \mathrm{d}b\, \mathrm{d}x.\]
 
-Nach der Integration von $b_min$ bis $b_max$ erhält man daraus:
+Nach der Integration von $b_{\text{min}}$ bis $b_{\text{max}}$ erhält man daraus
 
-\[-\left(\frac{dE}{dx}\right)=\frac{4\pi z^2
-e^4}{m_ev^2}n_e\text{ln}\left(\frac{b_{\text{max}}}{b_{\text{min}}}\right)\]
+\[-\left(\frac{\mathrm{d}E}{\mathrm{d}x}\right)=\frac{4\pi\cdot z^2\cdot 
+e^4}{m_e\cdot v^2}\,n_e\cdot\text{ln}\left(\frac{b_{\text{max}}}{b_{\text{min}}}\right).\]
 
-Nun müssen nur noch $b_{\text{min}}$ bis $b_{\text{max}}$ abgeschätzt werden. $b_{\text{min}}$ wird über das
-kinematische Limit abgeschätzt: Eine frontale Kollision liefert den maximalen Energieübertrag
+Nun müssen nur noch $b_{\text{min}}$ und $b_{\text{max}}$ abgeschätzt werden. $b_{\text{min}}$ wird
+über das kinematische Limit abgeschätzt: Eine frontale Kollision liefert den maximalen Energieübertrag
 
-\[\Delta E_{\text{max}}=\frac{1}{2}m_e(2v)^2\gamma^2.\]
+\[\Delta E_{\text{max}}=\frac{1}{2}\,m_e\cdot(2v)^2\cdot\gamma^2.\]
 
 Mit der oben abgeleiteten Beziehung
 
-\[\Delta E(b)=\frac{2z^2e^4}{m_ev^2b^2}\overset{!}{=}\Delta E_{\text{max}}\]
+\[\Delta E(b)=\frac{2z^2\cdot e^4}{m_e\cdot v^2 \cdot b^2}\overset{!}{=}\Delta E_{\text{max}}\]
 
 ergibt sich daraus:
 
-\[b_{\text{min}}=\frac{ze^2}{\gamma m_e v^2}.\]
+\[b_{\text{min}}=\frac{z\cdot e^2}{\gamma\cdot m_e\cdot v^2}.\]
 
 Die Abschätzung von $b_{\text{max}}$ folgt aus der "`adiabatischen Invarianz"': Die Targetelektronen
 sind in Atomen gebunden und "`umkreisen"' die Atomkerne mit einer mittleren Orbitalfrequenz
 $\overline{\nu}$. Damit ein Energieübertrag stattfindet, muss die Zeitdauer der Störung, $\Delta t$,
 kürzer sein als die Periodendauer $\tau$:
 
-\[\Delta t=\frac{b}{\gamma v} \le \tau =\frac{1}{\overline{\nu}}\]
+\[\Delta t=\frac{b}{\gamma\cdot v} \le \tau =\frac{1}{\overline{\nu}}.\]
 
 Daraus folgt
 
-\[b_{\text{max}}=\frac{\gamma v}{\overline{\nu}}.\]
+\[b_{\text{max}}=\frac{\gamma\cdot v}{\overline{\nu}}.\]
 
-Jetzt führen wir noch eine Größe for die Elektronen-Dichte des Target-Materials ein:
+Jetzt führen wir noch eine Größe für die Elektronen-Dichte des Target-Materials ein:
 
 \[n_e=N_A\cdot \rho\cdot \frac{Z}{A}\]
 
 mit der Avogadrozahl $N_A$, der Targetdichte $\rho$, der Ordnungszahl $Z$ und der Massenzahl $A$.
-Einsetzen der Grenzen für den Stoßparameter in die Formel und Substitution von $n_e$ führt zu
+Einsetzen der Grenzen für den Stoßparameter in die Formel für $\frac{\mathrm{d}E}{\mathrm{d}x}$ und
+Substitution von $n_e$ führt zu
 
-\[-\left(\frac{dE}{dx}\right)_{\text{coll}} = \frac{4\pi z^2e^4}{m_ev^2}N_A\cdot \rho
-\frac{Z}{A}\cdot\text{ln}\left(\frac{\gamma^2 m_e v^3}{2e^2\overline{\nu}}\right), \]
+\[-\left(\frac{\mathrm{d}E}{\mathrm{d}x}\right)_{\text{coll}} = \frac{4\pi\cdot z^2\cdot e^4}{m_e\cdot v^2}N_A\cdot
+\rho\cdot \frac{Z}{A}\cdot\text{ln}\left(\frac{\gamma^2\cdot m_e\cdot
+v^3}{2e^2\cdot\overline{\nu}}\right), \]
 
 was der klassischen Formel von Bohr entspricht. Diese beschreibt den Energieverlust für schwere
-Teilchen (Protonen, $\alpha$-Teilchen,\ldots) durch Anregung und Ionisation. Für leichte Teilchen
+Teilchen (Protonen, $\alpha$-Teilchen, \ldots) durch Anregung und Ionisation. Für leichte Teilchen
 müssen Quanteneffekte berücksichtigt werden.
 \\
 Die quantenmechanische Rechnung führt zur Bethe-Bloch(-Sternheimer)-Formel:
 
-\[-\left(\frac{dE}{dx}\right)_{\text{coll}} = 2\pi N_A r_e^2 m_e c^2 \rho \frac{Z}{A}
-\frac{z^2}{\beta^2}\left[ \text{ln} \left( \frac{2m_e c^2 \gamma^2 \beta^2 W_{\text{max}}}{I^2}
-\right) -2\beta^2 -\delta -2\frac{c}{z} \right]\]
+\[-\left(\frac{\mathrm{d}E}{\mathrm{d}x}\right)_{\text{coll}} = 2\pi\cdot N_A\cdot r_e^2\cdot
+m_e\cdot c^2 \cdot \rho\cdot \frac{Z}{A}\cdot \frac{z^2}{\beta^2}\left[ \text{ln} \left(
+\frac{2m_e\cdot c^2 \cdot\gamma^2 \cdot\beta^2 \cdot W_{\text{max}}}{I^2} \right) -2\beta^2 -\delta
+-2\,\frac{C}{Z} \right]\]
 
 mit 
 
 \[\beta =
-\frac{v}{c},~~~~~~~~~~~~\gamma=\frac{1}{\sqrt{1-\beta^2}}~~~~~~~~~~~~
-r_e=\frac{1}{4\pi\epsilon_0}\cdot\frac{e^2}{m_e c^2}\]
+\frac{v}{c},~~~~~~~~~~~~\gamma=\frac{1}{\sqrt{1-\beta^2}},~~~~~~~~~~~~
+r_e=\frac{1}{4\pi\cdot\epsilon_0}\cdot\frac{e^2}{m_e\cdot c^2}\]
 
 sowie
 \begin{description}
-\item[$z$]Ladung des einfallenden Teilchens
-\item[$Z, A$] Ordnungs- und Massenzahl des Targets
-\item[$\rho$] Targetdichte
-\item[$N_A$] Avogradozahl
-\item[$I$] mittleres Ionisationspotential (Materialkonstante des Targets)
-\item[$W_{\text{max}}$] max. Energieübertrag in einer Einzelkollision
-\item[$\delta$] Dichtekorrektur (Polarisationseffekt, $\delta \approx 2\text{ln}(\gamma)+K$)
-\item[$c$] Schalenkorrektur (wichtig für kleine Projektilgeschwindigkeiten)
+\item[$z$]: Ladung des einfallenden Teilchens
+\item[$Z, A$]: Ordnungs- und Massenzahl des Targets
+\item[$\rho$]: Targetdichte
+\item[$N_A$]: Avogradozahl
+\item[$I$]: mittleres Anregungspotential (Materialkonstante des Targets)
+\item[$W_{\text{max}}$]: max. Energieübertrag in einer Einzelkollision
+\item[$\delta$]: Dichtekorrektur (Polarisationseffekt, $\delta \approx 2\,\text{ln}(\gamma)+K$)
+\item[$C$]: Schalenkorrektur (wichtig für kleine Projektilgeschwindigkeiten)
 \end{description}
 
 
 Anmerkungen zur Bethe-Bloch-Formel:
 \begin{itemize}
-  \item sie beschreibt den Energieverlust sehr gut im Bereich $0,1 < \gamma\beta < 100$;
+  \item sie beschreibt den Energieverlust sehr gut im Bereich $0{,}1 < \gamma\cdot\beta < 100$;
   \item es gibt drei Bereiche:
   			\begin{itemize}
-  			  \item bei niedrigen Energien gibt es einen Abfall bis zu einem Minimum (bei $\gamma\beta$
-  			  ca. 3-3,5), Teilchen an diesem Punkt sind minimal ionisierende Teilchen;
+  			  \item bei niedrigen Energien gibt es einen $\frac{1}{\beta^2}$-Abfall bis zu einem Minimum
+  			  (bei $\gamma\cdot\beta$ ca. 3-3,5), Teilchen an diesem Punkt sind \textit{minimal ionisierende Teilchen};
   			  \item danach beginnt ein logarithmischer Anstieg mit zunehmender Teilchenenergie, der
   			  sogenannte "`relativistische Anstieg"';
-  			  \item bei hohen Energien wird das Fermi-Plateau erreicht: durch Polarisationseffekte erreicht
-  			  der Energieverlust  einen Sättigungswert (Dichtekorrektur);
+  			  \item bei hohen Energien (vor der Bremsstrahlung) wird das Fermi-Plateau erreicht: durch
+  			  Polarisationseffekte erreicht der Energieverlust  einen Sättigungswert (Dichtekorrektur);
   			  \end{itemize}
   \item beim Energieverlust handelt es sich um einen statistischen Vorgang.
 \end{itemize}
 
-Die Bethe-Bloch-Formel beschreibt den mittleren Energieverlust durch Ionisation und Anregung. Sie
+Die Bethe-Bloch-Formel beschreibt den \textbf{mittleren} Energieverlust durch Ionisation und Anregung. Sie
 gilt für alle geladenen Teilchen außer Elektronen und Positronen. Für diese muss die Gleichheit der
 Massen und die Ununterscheidbarkeit der Stoßpartner berücksichtigt werden. Unsere Ableitung
 unterscheidet sich von der Bethe-Bloch-Formel numerisch durch einen Faktor 2, was durch eine
 mangelhafte Berücksichtigung von Fernstößen zustande kommt. Für die quantenmechanische Beschreibung
-des Energieverlustes gibt es verschiedene Varianten der $\frac{dE}{dx}$-Formel, was an der
-unterschiedlichen Parametrisierung der Fernstöße, d.h. jenes Energieverlustes, bei dem die Bindung
-der Elektronen in den Atomhüllen nicht vernachlässigbar ist.
+des Energieverlustes gibt es verschiedene Varianten der $\frac{\mathrm{d}E}{\mathrm{d}x}$-Formel, was an der
+unterschiedlichen Parametrisierung der Fernstöße liegt, d.h. jenes Energieverlustes, bei dem die
+Bindung der Elektronen in den Atomhüllen nicht vernachlässigbar ist.
 \\
-Meist wird der Energieverlust pro Wegstrecke $\frac{1}{\rho}\frac{dE}{dx}$ angegeben, wobei $\rho$
-die Dichte in $\frac{\text{g}}{\text{cm}^3}$ ist. $\frac{1}{\rho}\frac{dE}{dx}$ ist für ein MIP nur
+Meist wird der Energieverlust pro Wegstrecke $\frac{1}{\rho}\frac{\mathrm{d}E}{\mathrm{d}x}$ angegeben, wobei $\rho$
+die Dichte in $\frac{\text{g}}{\text{cm}^3}$ ist. $\frac{1}{\rho}\frac{\mathrm{d}E}{\mathrm{d}x}$ ist für ein MIP nur
 schwach vom Absorbermaterial abhängig und beträgt ca. 
 
-\[2 \text{MeV}\frac{\text{cm}^2}{\text{g}}.\]
+\[2\, \text{MeV}\frac{\text{cm}^2}{\text{g}}.\]
+
+\FloatBarrier

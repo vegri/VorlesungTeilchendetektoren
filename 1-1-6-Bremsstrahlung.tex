@@ -1,3 +1,4 @@
+\FloatBarrier
 Bremsstrahlung wird emittiert, wenn (hochenergetische) geladene Teilchen in einem äußeren
 elektrischen Feld abgelenkt werden, beispielsweise im Coulomb-Feld eines Atomkerns oder eines
 Hüllenelektrons des Targets.
@@ -69,27 +70,27 @@ Die zughörigen Feyman-Diagramme niedrigster Ordnung:
 
 Für hohe Energien kann der Energieverlust durch Bremsstrahlung angenähert weren durch:
 
-\[-\left(\frac{dE}{dx}\right)_{\text{rad}} = 4\alpha \rho N_A \cdot \frac{Z(Z+1)}{A} \cdot z^2\cdot
-\left(\frac{1}{4\pi \epsilon_0} \frac{e^2}{mc^2} \right)^2 \cdot E\cdot \text{ln}(183\cdot
-Z^{-\frac{1}{3}}) \]
+\[-\left(\frac{\mathrm{d}E}{\mathrm{d}x}\right)_{\text{rad}} = 4\,\alpha\cdot \rho\cdot N_A \cdot
+\frac{Z(Z+1)}{A} \cdot z^2\cdot \left(\frac{1}{4\,\pi\cdot \epsilon_0}\cdot \frac{e^2}{m\cdot c^2}
+\right)^2 \cdot E\cdot \text{ln}(183\cdot Z^{-1/3}) \]
 
 Der Beitrag $Z^2$ kommt von der Ablenkung im Feld des Kerns mit der Ladung $Z\cdot e$, der Beitrag
 $Z$ von der Ablenkung im Feld der $Z$ Hüllenelektronen jeweils mit Ladung $-e$. Hierbei wird nicht
 berücksichtigt, dass die Hüllenelektronen das Feld des Atomkerns teilweise abschirmen und die Formel
 daher nur für große $E$ gültig ist.
 \\
-Beachte: Bereits für ds zweitleichteste Teilchen, das Myon, ist der Bremsstrahlungsverlust 40.000
-mal kleiner als für das Elektron. 
+Beachte: Bereits für das zweitleichteste Teilchen, das Myon, ist der Bremsstrahlungsverlust 40.000
+mal kleiner als für das Elektron. Es gilt
 
-\[-\left(\frac{dE}{dx}\right)_{\text{rad}} \sim E~~~~~~~~~~\text{und}~~~~~~~~~
--\left(\frac{dE}{dx}\right)_{\text{rad}} \sim \frac{1}{m^2}\]
+\[-\left(\frac{\mathrm{d}E}{\mathrm{d}x}\right)_{\text{rad}} \sim E~~~~~~\text{und}~~~~~
+-\left(\frac{\mathrm{d}E}{\mathrm{d}x}\right)_{\text{rad}} \sim \frac{1}{m^2}.\]
 
 \subsubsection*{Kritische Energie $E_c$}
 
 Die kritische Energie ist jene Energie eines Projektils, bei welcher der Energieverlust durch
 Strahlung gleich dem Energieverlust durch die Kollision ist:
 
-\[-\left(\frac{dE}{dx}\right)_{\text{rad}} \bigg|_{E_c} = -\left(\frac{dE}{dx}\right)_{\text{coll}}
+\[-\left(\frac{\mathrm{d}E}{\mathrm{d}x}\right)_{\text{rad}} \bigg|_{E_c} = -\left(\frac{\mathrm{d}E}{\mathrm{d}x}\right)_{\text{coll}}
 \bigg|_{E_c}  \]
 
 $E_c$ ist abhängig von der Teilchenart des Projektils und vom Targetmaterial (wenn nicht anders
@@ -101,7 +102,7 @@ erhalten, verwendet man:
 
 Zur groben Abschätzung von $E_c$ sind diverse Näherungen gegeben, z.B.
 
-\[E_c = \frac{800}{Z+1{},2}~\text{MeV} \]
+\[E_c = \frac{800}{Z+1{,}2}~\text{MeV} \]
 
 oder für Festköper
 
@@ -117,25 +118,23 @@ Die bekannten Zahlenwerte für $E_c$ schwanken relativ stark:
 \begin{figure}[H]
 	\centering
 	\includegraphics[width=0.5\textwidth]{tabelle1.jpg}
-	\caption{}
-	\label{}
 \end{figure}
 
 \subsubsection*{Strahlungslänge $\chi_0$}
 
-Die Strahlungslänge ist jene Strecke, in der die Energie des Projektils durch Strahlungsverlust um
-einen Faktor $\frac{1}{e}(\approx)$63,2\% kleiner wird:
+Die Strahlungslänge ist jene Strecke, in der die Energie des Projektils durch Strahlungsverluste um
+einen Faktor $\frac{1}{e}~(\approx63{,}2\,\%)$ kleiner wird:
 
-\[E(x)=E_0\cdot e^{-\frac{x}{\chi_0}}\]
+\[E(x)=E_0\cdot e^{-\frac{x}{\chi_0}}.\]
 
 Diese Beziehung ist nur sinnvoll für Energien größer als $E_c$. Die Literaturwerte für $\chi_0$
 beziehen sich dabei stets auf Elektronen, für andere Teilchen skaliert die Strahlungslänge mit dem
 Quadrat der Projektilmasse (ebenso wie bei $E_c$).
 \\
-Die oben gegebene Formel für die Bremsstrahlung führt für die Elektronen auf eine Strahlungslänge
+Die oben gegebene Formel für die Bremsstrahlung führt für Elektronen auf eine Strahlungslänge
 von 
 
-\[\frac{1}{\chi_0}=4\cdot\alpha \rho N_A \cdot\frac{Z(Z+1)}{A}\cdot
+\[\frac{1}{\chi_0}=4\,\alpha\cdot \rho\cdot N_A \cdot\frac{Z(Z+1)}{A}\cdot
 r_e^2\cdot\text{ln}\left(183\cdot Z^{-1/3}\right)\]
 
 \[\text{Näherungsformel:}~~\chi_0\bigg[\frac{\text{g}}{\text{cm}^2}\bigg] \approx
@@ -150,3 +149,5 @@ folglich in [g/cm$^2$] angegeben:
 	\centering
 	\includegraphics[width=0.5\textwidth]{tabelle2.jpg}
 \end{figure}
+
+\FloatBarrier
